@@ -140,7 +140,7 @@ if prompt := st.chat_input("请输入你的问题..."):
         "Content-Type": "application/json"
     }
     payload = {
-        "model": "grok-3",
+        "model": "grok-3-beta",
         "messages": [
             {
                 "role": "system",
