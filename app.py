@@ -133,7 +133,7 @@ if prompt := st.chat_input("请输入你的问题..."):
     st.session_state["messages"].append({"role": "assistant", "content": "", "pending": True, "status": "thinking"})
 
     # 调用 xAI Grok-3 API
-    api_key = "xai-zeKCCWj137DlajvMe7B5GbXNpvLMmc9DLCmHpCIQmo25toV3zPciUNLfGBQEknN1NX0fLYIcOTpDGpRq"  # 替换为你的 xAI API Key
+    api_key = st.secrets["api_key"]  # 从secrets.toml读取API Key# 替换为你的 xAI API Key
     url = "https://api.x.ai/v1/chat/completions"
     headers = {
         "Authorization": f"Bearer {api_key}",
