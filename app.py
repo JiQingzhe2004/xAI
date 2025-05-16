@@ -7,7 +7,15 @@ st.set_page_config(page_title="Grok-3 聊天助手", page_icon="🤖", layout="c
 
 st.title("AI 聊天助手")
 st.write("模型：xAI Grok-3-deta。")
-
+st.markdown(
+    """
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 16px; color: #e6e6e6;">作者：@Forrest</span>
+        <img src="https://img.picui.cn/free/2025/05/17/6827a43b82199.jpg" width="30" style="border-radius: 50%; object-fit: cover;" />
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 # 阻止中文输入法回车直接提交
 st.markdown(
     """
