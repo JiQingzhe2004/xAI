@@ -5,8 +5,8 @@ import json
 
 st.set_page_config(page_title="Grok-3 聊天助手", page_icon="🤖", layout="centered")
 
-st.title("🤖 Grok-3 AI 聊天助手")
-st.write("与 xAI Grok-3 大模型畅聊。")
+st.title("AI 聊天助手")
+st.write("模型：xAI Grok-3-deta。")
 
 # 阻止中文输入法回车直接提交
 st.markdown(
